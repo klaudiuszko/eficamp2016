@@ -1,0 +1,119 @@
+greep - do nauki
+https://git-scm.com/download/win
+
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles
+$ git init
+Initialized empty Git repository in C:/Users/User/Desktop/eficampFiles/.git/
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ add readme.md
+bash: add: command not found
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ echo "# eficamp2016" >> README.md
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md
+        notatki.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ git add. README.md
+git: 'add.' is not a git command. See 'git --help'.
+
+Did you mean this?
+        add
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ add README.md
+bash: add: command not found
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ git commit -m "stworzenie pliku readme"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <(null)>) not allowed
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ git config --global user.name "klaudiuszko"
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ git commit -m "stworzenie pliku readme"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'User@User-Komputer.(none)')
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ git config --global user.name klaudiuszko
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ git commit -m "stworzenie pliku readme"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'User@User-Komputer.(none)')
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ git config --global user.name "klaudiuszko"
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ git config --global user.email klaudiusz@goodonegroup.pl
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ git commit -m "stworzenie pliku readme"
+[master (root-commit) b7c3f77] stworzenie pliku readme
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$ ^C
+
+User@User-Komputer MINGW64 ~/Desktop/eficampFiles (master)
+$
